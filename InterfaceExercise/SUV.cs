@@ -6,7 +6,25 @@ using System.Threading.Tasks;
 
 namespace InterfaceExercise
 {
-    public class SUV
+    public class SUV : IVehicle, ICompany
     {
+        public bool OffRoadCapable { get; set; }
+        public bool IsLarge { get; set; }
+        public int NumberOfWheels { get; set; }
+        public string Brand { get; set; }
+        public string Color { get; set; }
+        public string CountryOfOrigin { get; set; }
+        public int Profits { get; set; }
+        public int Losses { get; set; }
     }
 }
+
+
+//In each of your Car, Truck, and SUV classes
+
+/* Create 2 members that are specific to each class
+ * Example for Car: public bool HasTrunk { get; set; }
+ * Example for SUV: public int NumberOfSeats { get; set; }
+ *
+ * Then, Set each class to inherit from both IVehicle and ICompany and implement their members.
+ */
