@@ -17,7 +17,7 @@ namespace InterfaceExercise
         public int Profits { get; set; }
         public int Losses { get; set; }
     }
-    {
+    
 
-    }
+    
 }
